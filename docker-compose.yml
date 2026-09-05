@@ -1,0 +1,18 @@
+services:
+  vguard-api:
+    build: .
+    container_name: vguard-api
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    environment:
+      - VGUARD_ENV=production
+      - VGUARD_SECRET_KEY=change-this-in-production-vguard-key
+      - DATABASE_URL=sqlite:////app/data/vguard.db
+    volumes:
+      - vguard-data:/app/data
+      - vguard-uploads:/app/uploads
+
+volumes:
+  vguard-data:
+  vguard-uploads:

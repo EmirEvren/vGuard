@@ -1,0 +1,63 @@
+# ──────────────────────────────────────────────
+# vGuard .gitignore
+# ──────────────────────────────────────────────
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# ── Node / Frontend ──
+node_modules/
+frontend/dist/
+frontend/node_modules/
+
+# ── Environment & Secrets ──
+.env
+.env.*
+!.env.example
+!vguard.env.example
+
+# ── AI Model & Training Artifacts ──
+*.pkl
+*.joblib
+dataset.csv
+vguard_model_report.json
+
+# ── Runtime Data (generated at runtime) ──
+*.db
+*.sqlite
+*.sqlite3
+.pytest_cache/
+vguard_logs.json
+vguard_logs_export.csv
+vguard_evaluation_report.json
+vguard_evaluation_summary.csv
+vguard_ip_risk.json
+vguard_solved_events.json
+vguard_auth_security.json
+vguard_users.json
+vguard_password_resets.json
+kvm_evidence_snapshot.json
+vguard_heartbeat.txt
+
+# ── Build Artifacts ──
+BUILD_MANIFEST.json
+assets/
+
+# ── IDE & OS ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

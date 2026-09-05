@@ -1,0 +1,16 @@
+flask
+flask-cors
+flask-sqlalchemy
+flask-migrate
+werkzeug
+scapy
+numpy
+pandas
+scikit-learn
+joblib
+netfilterqueue; platform_system == "Linux"
+pydivert; platform_system == "Windows"
+qrcode[pil]
+google-generativeai
+python-dotenv
+pytest

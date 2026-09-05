@@ -1,0 +1,10 @@
+flask
+flask-cors
+werkzeug
+numpy
+pandas
+scikit-learn
+joblib
+scapy
+qrcode[pil]
+google-generativeai

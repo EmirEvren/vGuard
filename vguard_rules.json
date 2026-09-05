@@ -1,0 +1,345 @@
+{
+  "LOG4J_EXPLOIT": [
+    "${jndi:ldap:",
+    "${jndi:rmi:",
+    "${jndi:dns:",
+    "${jndi:nis:",
+    "${jndi:nds:",
+    "${jndi:corba:",
+    "${jndi:iiop:",
+    "jndi:ldap://",
+    "jndi:rmi://",
+    "${lower:j}ndi:",
+    "${jndi:"
+  ],
+
+  "SPRING4SHELL_EXPLOIT": [
+    "class.module.classloader",
+    "classloader.resources",
+    "pipeline.first.pattern"
+  ],
+
+  "SSTI_INJECTION": [
+    "{{7*7}}",
+    "${7*7}",
+    "<%= 7*7 %>",
+    "#{7*7}",
+    "*{7*7}",
+    "{% import os %}",
+    "jinja2.sandbox"
+  ],
+
+  "WEBSHELL_BACKDOOR": [
+    "c99shell",
+    "r57shell",
+    "b374k",
+    "wso shell",
+    "china chopper",
+    "weevely",
+    "pas_webshell",
+    "eval(base64_decode(",
+    "eval(gzinflate("
+  ],
+
+  "PROTOTYPE_POLLUTION": [
+    "__proto__",
+    "constructor.prototype",
+    "__definegetter__",
+    "__definesetter__"
+  ],
+
+  "SQL_INJECTION": [
+    "union select",
+    "or 1=1",
+    "or '1'='1",
+    "' or '1'='1",
+    "\" or \"1\"=\"1",
+    "1' or 1=1 --",
+    "1' or 1=1 #",
+    "drop table",
+    "select * from",
+    "information_schema",
+    "xp_cmdshell",
+    "sleep(",
+    "benchmark(",
+    "waitfor delay",
+    "load_file(",
+    "into outfile",
+    "pg_sleep(",
+    "extractvalue(",
+    "updatexml(",
+    "order by 1000--"
+  ],
+
+  "XSS_ATTACK": [
+    "<script>",
+    "</script>",
+    "javascript:",
+    "onerror=",
+    "onload=",
+    "document.cookie",
+    "<img",
+    "<svg",
+    "<iframe",
+    "<object",
+    "eval(",
+    "prompt(",
+    "confirm(",
+    "srcdoc=",
+    "fetch('http",
+    "navigator.sendbeacon",
+    "document.location"
+  ],
+
+  "PATH_TRAVERSAL": [
+    "../",
+    "..\\",
+    "/etc/passwd",
+    "/etc/shadow",
+    "boot.ini",
+    "win.ini",
+    "%2e%2e%2f",
+    "%2e%2e/",
+    "..%2f",
+    "%252e%252e%252f",
+    "..%5c",
+    "%c0%ae%c0%ae",
+    "....//",
+    "....\\\\"
+  ],
+
+  "COMMAND_INJECTION": [
+    "; cat",
+    "; ls",
+    "; id",
+    "; whoami",
+    "| ls",
+    "| cat",
+    "| whoami",
+    "&& whoami",
+    "&& id",
+    "|| id",
+    "/bin/bash",
+    "/bin/sh",
+    "/bin/zsh",
+    "bash -c",
+    "sh -c",
+    "cmd.exe",
+    "powershell -enc",
+    "powershell -nop",
+    "`whoami`",
+    "$(whoami)",
+    "$(id)",
+    "; wget",
+    "; curl",
+    "| wget",
+    "| curl",
+    "&& wget",
+    "&& curl",
+    "invokewebrequest",
+    "certutil -urlcache",
+    "bash -i >&"
+  ],
+
+  "MALICIOUS_SCANNER": [
+    "sqlmap",
+    "nikto",
+    "gobuster",
+    "wpscan",
+    "acunetix",
+    "nessus",
+    "openvas",
+    "masscan",
+    "zgrab",
+    "zmap",
+    "whatweb",
+    "arachni",
+    "ffuf",
+    "feroxbuster",
+    "hydra",
+    "nuclei",
+    "dirsearch",
+    "burpsuite",
+    "jaeles"
+  ],
+
+  "MALWARE_INDICATOR": [
+    "meterpreter",
+    "reverse_tcp",
+    "reverse_http",
+    "reverse_https",
+    "/bin/sh -i",
+    "/bin/bash -i",
+    "mimikatz",
+    "powershell -enc",
+    "downloadstring",
+    "invoke-expression",
+    "invoke-mimikatz",
+    "nc -e",
+    "ncat -e",
+    "msfvenom",
+    "payload.exe",
+    "cobaltstrike",
+    "beacon"
+  ],
+
+  "SSRF_ATTACK": [
+    "169.254.169.254",
+    "metadata.google.internal",
+    "metadata/computemetadata",
+    "latest/meta-data",
+    "file://",
+    "gopher://",
+    "dict://",
+    "ftp://",
+    "http://internal",
+    "aws_access_key_id",
+    "iam/security-credentials",
+    "127.0.0.1:8080",
+    "localhost:2375"
+  ],
+
+  "XXE_ATTACK": [
+    "<!doctype",
+    "<!entity",
+    "<!element",
+    "system \"file://",
+    "system 'file://",
+    "xxe",
+    "external entity",
+    "php://filter",
+    "expect://"
+  ],
+
+  "INSECURE_DESERIALIZATION": [
+    "ysoserial",
+    "java.io.object",
+    "ro0ab",
+    "aced0005",
+    "__wakeup",
+    "__destruct",
+    "pickle.loads",
+    "objectinputstream",
+    "readobject",
+    "serialized payload"
+  ],
+
+  "BROKEN_ACCESS_CONTROL": [
+    "admin=true",
+    "role=admin",
+    "isadmin=true",
+    "force_admin",
+    "privilege=admin",
+    "access_level=admin",
+    "unauthorized_admin_access",
+    "auth_bypass"
+  ],
+
+  "CSRF_ATTACK": [
+    "csrf=false",
+    "missing_csrf",
+    "invalid_csrf",
+    "no_csrf",
+    "cross-site request"
+  ],
+
+  "SESSION_HIJACKING": [
+    "stolen_session",
+    "session_fixation",
+    "session fixation",
+    "hijacked_session",
+    "cookie theft",
+    "document.cookie"
+  ],
+
+  "JWT_ATTACK": [
+    "alg\":\"none",
+    "alg:none",
+    "none algorithm",
+    "invalid signature",
+    "kid=../../",
+    "jku=http://",
+    "x5u=http://"
+  ],
+
+  "API_FUZZING": [
+    "fuzz",
+    "api_fuzz",
+    "test'\"",
+    "%00",
+    "%ff",
+    "../../../../"
+  ],
+
+  "RATE_LIMIT_BYPASS": [
+    "rate-limit-bypass",
+    "429 bypass",
+    "retry-after: 0",
+    "bypass-rate-limit",
+    "rotate-ip"
+  ],
+
+  "BRUTE_FORCE": [
+    "hydra",
+    "medusa",
+    "ncrack",
+    "patator",
+    "password spray",
+    "credential stuffing",
+    "too many login attempts"
+  ],
+
+  "PORT_SCAN": [
+    "masscan",
+    "zmap",
+    "zgrab",
+    "nmap scripting engine",
+    "service detection scan",
+    "port scan detected"
+  ],
+
+  "DNS_REBINDING": [
+    "dns rebinding",
+    "rebind attack",
+    "private-ip rebinding",
+    "internal host rebinding"
+  ],
+
+  "HTTP_FLOOD": [
+    "http flood",
+    "rapid requests",
+    "high request rate",
+    "apachebench",
+    "wrk benchmark",
+    "siege benchmark"
+  ],
+
+  "SYN_FLOOD": [
+    "syn flood",
+    "half-open flood",
+    "hping3",
+    "nping syn",
+    "scapy syn flood"
+  ],
+
+  "KUBERNETES_MISCONFIGURATION": [
+    "/api/v1/namespaces",
+    "/api/v1/pods",
+    "/api/v1/secrets",
+    "kubelet",
+    "kubernetes-dashboard",
+    "serviceaccount token",
+    "clusterrolebinding"
+  ],
+
+  "CLOUD_MISCONFIGURATION": [
+    "aws_secret_access_key",
+    "azure_client_secret",
+    "gcp_service_account",
+    ".env",
+    "s3 bucket public",
+    "public bucket",
+    "exposed access key",
+    "iam role credentials"
+  ]
+}

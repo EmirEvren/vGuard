@@ -1,0 +1,12 @@
+export { DashboardTab } from "./DashboardTab.jsx";
+export { AnalysisTab } from "./AnalysisTab.jsx";
+export { SimulatorTab } from "./SimulatorTab.jsx";
+export { BansTab } from "./BansTab.jsx";
+export { UsersTab } from "./UsersTab.jsx";
+export { ReportsTab } from "./ReportsTab.jsx";
+export { RulesTab } from "./RulesTab.jsx";
+export { ProfileTab } from "./ProfileTab.jsx";
+export { KvmLabTab } from "./KvmLabTab.jsx";
+export { ValidationTab } from "./ValidationTab.jsx";
+export { SettingsTab } from "./SettingsTab.jsx";
+export { ActiveDefenseTab } from "./ActiveDefenseTab.jsx";
